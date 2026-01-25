@@ -1,4 +1,4 @@
-package com.java.basic.reflection.fifthExample;
+package basic.reflection.fifthExample;
 
 import java.lang.reflect.Field;
 

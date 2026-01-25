@@ -1,4 +1,4 @@
-package com.java.basic.reflection;
+package basic.reflection;
 
 public class CreateReflection {
 

@@ -1,4 +1,4 @@
-package com.java.basic.reflection.firstExample;
+package basic.reflection.secondExample;
 
 public class Eagle {
 
@@ -9,7 +9,7 @@ public class Eagle {
         System.out.println("fly");
     }
 
-    public void eat() {
+    private void eat() {
         System.out.println("eat");
     }
 }

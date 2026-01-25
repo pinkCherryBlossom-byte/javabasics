@@ -1,15 +1,15 @@
-package com.java.basic.reflection.secondExample;
+package basic.reflection.fourthExample;
 
 public class Eagle {
 
     public String breed;
-    private boolean canSwim;
+    private String canSwim;
 
     public void fly() {
         System.out.println("fly");
     }
 
-    private void eat() {
+    public void eat() {
         System.out.println("eat");
     }
 }

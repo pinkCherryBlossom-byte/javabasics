@@ -1,4 +1,4 @@
-package com.java.basic.reflection.thirdReflection;
+package basic.reflection.thirdReflection;
 
 public class Eagle {
 

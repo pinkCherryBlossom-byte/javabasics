@@ -1,4 +1,4 @@
-package com.java.basic.reflection.fourthExample;
+package basic.reflection.fourthExample;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

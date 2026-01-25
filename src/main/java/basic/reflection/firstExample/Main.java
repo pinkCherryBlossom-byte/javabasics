@@ -1,4 +1,4 @@
-package com.java.basic.reflection.firstExample;
+package basic.reflection.firstExample;
 
 import java.lang.reflect.Modifier;
 

@@ -1,4 +1,4 @@
-package com.java.basic.reflection.secondExample;
+package basic.reflection.secondExample;
 
 import java.lang.reflect.Method;
 

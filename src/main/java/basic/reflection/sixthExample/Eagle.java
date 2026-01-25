@@ -1,4 +1,4 @@
-package com.java.basic.reflection.sixthExample;
+package basic.reflection.sixthExample;
 
 public class Eagle {
 

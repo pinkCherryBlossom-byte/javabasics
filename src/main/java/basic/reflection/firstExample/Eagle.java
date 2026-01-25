@@ -1,9 +1,9 @@
-package com.java.basic.reflection.fourthExample;
+package basic.reflection.firstExample;
 
 public class Eagle {
 
     public String breed;
-    private String canSwim;
+    private boolean canSwim;
 
     public void fly() {
         System.out.println("fly");
