@@ -48,3 +48,20 @@ Collections
    - remove arbitrary element ->O(n)
    
 2. Internally Arrays.sort(arr) uses quicksort mechanism to sort
+
+3. Deque stands for double ended queue
+   
+   Time complexity:
+   - Insertion -> O(1) but after resizing its O(n)
+   - Deletion -> O(1)
+   - Search -> O(1)
+
+4. Both ArrayDeque and PriorityQueue is not threadSafe
+    for PriorityQueue -> threadsafe is -> PriorityBlockingQueue
+    for ArrayDeque -> threadsafe is -> ConcurrentLinkedDeque
+
+5. Vector is exact same as arrayList but vector is thread safe.
+
+6. You can also use copyOnWriteArrayList in list to make it thread safe.
+
+7. Stack is thread safe. 
