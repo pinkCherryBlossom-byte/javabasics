@@ -64,4 +64,24 @@ Collections
 
 6. You can also use copyOnWriteArrayList in list to make it thread safe.
 
-7. Stack is thread safe. 
+7. Stack is thread safe.
+
+8. There are 2 points to consider:
+    a. If obj1==obj2 then their hash value has to be same.
+    b. If the hash value of obj1 and obj2 is same it doesnt mean their values are going 
+        to be same obj1.equals(obj2) can be false.
+
+9. HashMap: Doesn't maintain order, and is not thread safe
+   HashTable: Synchronized version of HashMap
+   LinkedHashMap: Maintains insertion order
+   TreeMap: Sorts data internally
+
+10. In LinkedHashMap, it should always show insertion order but if we make access order as true then the most frequently accessed element will be printed at last.
+     Refer main3 example in collections, mapExample.
+
+11. while you are iterating a set, if you are trying to add element into the set, then it will throw concurrentModificationException. Hence, you should always use threadSafe.
+    Refer collections, setExample, Main2 class.
+
+12. In LinkedHashSet, insertion order is maintained but access order is not maintained. Even if we pass true it will not be passed further.
+
+13.
