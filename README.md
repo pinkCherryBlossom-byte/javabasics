@@ -84,4 +84,47 @@ Collections
 
 12. In LinkedHashSet, insertion order is maintained but access order is not maintained. Even if we pass true it will not be passed further.
 
-13.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+MultiThreading
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Daemon Thread, is any thread running in async manner. All thread we create are user thread.
+   Daemon Thread is alive until its user thread is alive.
+
+2. Garbage collector is good example of daemon thread.
+
+3. Synchronize is used to provide lock. This is monitor lock.(which is applicable during sharing resources).
+   Synchronize adds lock to every object.
+
+4. There are other types of lock that do not acquire lock on object, they completely lock the method.
+   a. Reentrant lock
+   b. readWrite lock
+   c. Stamped lock
+   d. Semaphore
+
+5. When a thread has shared lock, then any thread can take shared lock and can read, but no thread can provide exclusive lock to it.
+   But if the thread has exclusive lock than no thread can have permission to read or write. 
+
+6. Semaphore is used when at a same time if you want multiple threads to acquire locks.
+
+7. Lock free mechanism also exits (it is called CAS, compare and swap)  used to achieve concurrency:
+   a. AtomicInteger
+   b. AtomicBoolean
+   c. AtomicLong
+   d. AtomicReference
+
+8. Optimistic Read, when I am trying to update value of row where row version is version, since my query has row 
+   version as 1. I will be able to update the row. Once the row is updated now the row has updated value and row 
+   version as 2. If somebody else is try to update same value but they are saying it ll update value with row version as 1
+   it will not be allowed. They will have to read the row again, get latest row version and then only they can update.
+
+9. Cas solving goes like, cas(memory value,expected value,new value)
+   step 1 : get the memory value
+   step 2 : compare memory value with expected value
+   step 3 : update the new value if expected value is same as memory value
+
+10. CAS faces ABA issue, where when we are trying to update the value say the value was first 10(which I wanted to update) 
+   then it got updated to 12 then again it become 10. So even though I am comparing with latest 10, I was not suppose to
+   update this 10. This issue is resolved by using row version or by timestamp comparison.
+
+11.
