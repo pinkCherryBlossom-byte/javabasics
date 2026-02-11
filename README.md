@@ -127,4 +127,27 @@ MultiThreading
    then it got updated to 12 then again it become 10. So even though I am comparing with latest 10, I was not suppose to
    update this 10. This issue is resolved by using row version or by timestamp comparison.
 
-11.
+11. Volatile keyword makes sure that read/write operation should directly happen into the memory and not from CPU's L1 cache or L2 cache.
+
+12. Runnable and callable represents a task that needs to be executed but only difference is runnable doesn't 
+    return anything and callable returns object.
+
+13. CompletableFuture is advanced version of Future. It provides chaining. It was introduced in java 8.
+
+14. when I say executor.submit() -> it creates new thread and does the task. Again here we are saying how many threads we need.
+
+15. In completableFuture.supplyAsync() -> it also creates new thread for me. If along with supplier if I am not passing executor than it will
+    use default Fork-Join pool executor.
+
+16. In CompletableFuture to continue chaining there are 2 methods thenApply() and thenApplyAsync()
+    after execution of the current task by supplyAsync,
+    thenApply() -> current thread will continue the execution (synchronous)
+    thenApplyAsync() -> new thread will be created to execute this task (Asynchronous), order is not guaranteed.
+
+17. As thenApplyAsync() is independent task and i want to bring some ordering say, one async starting depends on previous
+    async result then we can use thenCompose(). It maintains ordering for me.If I use thenComposeAsync then new thread will maintain
+    all ordering for me but with thenCompose, previous thread will be used.
+
+18. theAccept() is end of chain operations, in completable future.
+
+19. thenCombine() is used to compare result of 2 comparableFuture.
