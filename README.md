@@ -151,3 +151,28 @@ MultiThreading
 18. theAccept() is end of chain operations, in completable future.
 
 19. thenCombine() is used to compare result of 2 comparableFuture.
+
+20. Use newFixedPoolSize when you know exact amount of task needed to be completed.
+
+21. newCachedThreadPool is used when you have to create thread pool dynamically. It is majorly used when there are a lot
+    of short-lived tasks.
+
+22. ForkAndJoinPool is nothing but, there is a big task and it will further be divided into subtasks. Once all the task is completed they will be joined back.
+    There is a concept of workStealing here,
+      If there is 2 thread, each working on 1 task, every thread will have its own workStealing queue. If any task can be divided, then the thread divides the 
+    task into subtasks and places it into work stealing queue. If all the task is completed by the other thread, it will check its own work stealing queue, if it
+    is empty, then it will check normal(submission) queue. If this queue is also empty, then it will check busy thread's work stealing queue and picks that task.
+
+23. ThreadLocal holds the value of Thread-Local variable which is individual to every thread
+
+24. Virtual Thread was introduced to provide higher throughput and no latency. (High throughput means able to do more tasks in same time)
+
+25. When we create a thread (normal thread also called platform thread), jvm ask CPU to create OS thread, and platform thread is just 
+    a wrapper around OS thread. Here JVM is maintaining the platform thread and we interact with platform thread but in actual we are interacting 
+    with OS thread.
+    Disadvantage : Its slow, this is why we are using threadPoolExceutor. (because thread creation takes time).
+                   If we have to do DB call and it is taking more time than OS thread will be idle until the db call is completed.
+
+26. The concept of virtual Thread is that, JVM will create lot of virtual thread and they will be attached to OS only if they have to run.
+    In case it has to wait than it will detach itself and some other virtual thread that has to run will attach itself to OS thread.
+
