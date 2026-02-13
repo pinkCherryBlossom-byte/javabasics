@@ -177,12 +177,18 @@ MultiThreading
     In case it has to wait than it will detach itself and some other virtual thread that has to run will attach itself to OS thread.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+java 14
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. In switch case instead of giving case every line, we can use comma separated case, if there is same working for all.
+2. In Switch, by mistake if i missed break then it will fall through next case. but here it doesn't all we have to do is use case ->, no need to add break here.
+3. Using switch, now we can even return value, but we will have to use yield, to return.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 java 17
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. Sealed Classes were introduced, so that we can have control over who can implement and cannot implement interfaces.
     If we make interface as sealed than we have to make sure, only the permitted ones can implement the interface, also the
     class has limitation it should be either final or non-sealed.
-
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Java 21
