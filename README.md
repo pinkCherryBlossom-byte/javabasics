@@ -176,3 +176,18 @@ MultiThreading
 26. The concept of virtual Thread is that, JVM will create lot of virtual thread and they will be attached to OS only if they have to run.
     In case it has to wait than it will detach itself and some other virtual thread that has to run will attach itself to OS thread.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+java 17
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Sealed Classes were introduced, so that we can have control over who can implement and cannot implement interfaces.
+    If we make interface as sealed than we have to make sure, only the permitted ones can implement the interface, also the
+    class has limitation it should be either final or non-sealed.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Java 21
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. In java 21, Sequenced Collection,Sequenced Map, Sequenced Set was introduced, because all the collection's classes have different method to get the first element to
+   get the last element or to reverse the collection. To have common method so that it is easy to maintain and work with.
+
