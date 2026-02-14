@@ -188,6 +188,7 @@ java 16
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. In pattern matching we will check in if condition the variable name as well with type so that there is no extra overhead of typecasting.
 2. Pattern matching works with && but does not work with ||.
+3. Record class is used to create immutable class
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 java 17
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -202,3 +203,4 @@ Java 21
 1. In java 21, Sequenced Collection,Sequenced Map, Sequenced Set was introduced, because all the collection's classes have different method to get the first element to
    get the last element or to reverse the collection. To have common method so that it is easy to maintain and work with.
 
+2. In pattern matching if any variable is declared than its scope is limited only till its block.
