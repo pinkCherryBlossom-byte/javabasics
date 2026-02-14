@@ -184,6 +184,13 @@ java 14
 3. Using switch, now we can even return value, but we will have to use yield, to return.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+java 15
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Use """ to make reading easy. It is multiline. (starts and ends with """)
+2. If you want to preserve trailing white space preserve using \s.
+3. If you want the content of text block to appear in single line use \.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 java 16
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. In pattern matching we will check in if condition the variable name as well with type so that there is no extra overhead of typecasting.
