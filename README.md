@@ -184,6 +184,11 @@ java 14
 3. Using switch, now we can even return value, but we will have to use yield, to return.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+java 16
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. In pattern matching we will check in if condition the variable name as well with type so that there is no extra overhead of typecasting.
+2. Pattern matching works with && but does not work with ||.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 java 17
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. Sealed Classes were introduced, so that we can have control over who can implement and cannot implement interfaces.
